@@ -49,7 +49,7 @@ for x in links:
         for n in test_list:
             test_opener.write(n)
         test_opener.close()
-        os.system(bash_script + ' --junitxml=/junit_results/' + link_name + '.xml &')
+        os.system(bash_script + ' --junitxml=junit_results/' + link_name + '.xml &')
         sleep(30)
 
 
