@@ -16,7 +16,7 @@ name = str(now.tm_hour) + ':' + str(now.tm_min) + ':' + str(now.tm_sec) + url + 
 
 capabilities = {
     "browserName": "chrome",
-    "browserVersion": "100.0",
+    "browserVersion": "102.0",
     "selenoid:options": {
         "enableVNC": True,
         "enableVideo": False,
