@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 capabilities = {
   "browserName": "chrome",
-  "browserVersion": "100.0",
+  "browserVersion": "102.0",
   "selenoid:options": {
   "enableVNC": True,
   "enableVideo": False,
