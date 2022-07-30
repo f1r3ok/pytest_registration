@@ -23,9 +23,6 @@ driver.maximize_window()
 
 bash_script = 'python3 -m pytest -v --alluredir=./allure_result'
 
-os.system('mkdir junit_results')
-os.system('chmod -r 777 junit_results/')
-
 links = open("links.txt", "r")
 
 old_path = './test_pages_lang.py'
