@@ -16,7 +16,7 @@ name = str(now.tm_hour) + ':' + str(now.tm_min) + ':' + str(now.tm_sec) + url + 
 
 capabilities = {
     "browserName": "chrome",
-    "browserVersion": "100.0",
+    "browserVersion": "102.0",
     "selenoid:options": {
         "enableVNC": True,
         "enableVideo": False,
@@ -26,7 +26,7 @@ capabilities = {
 }
 
 
-driver = webdriver.Remote(command_executor="http://46.166.138.15:4444/wd/hub", desired_capabilities=capabilities)
+driver = webdriver.Remote(command_executor="http://localhost:4444/wd/hub", desired_capabilities=capabilities)
 
 
 def capture_screenshot(title='captured_screenshot'):
