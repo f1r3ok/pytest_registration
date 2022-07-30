@@ -21,7 +21,7 @@ driver = webdriver.Remote(command_executor="http://46.166.138.15:4444/wd/hub", d
 
 driver.maximize_window()
 
-bash_script = 'python3 -m pytest -v --alluredir=./allure_result --junitxml=./junitxml &'
+bash_script = 'python3 -m pytest -v --alluredir=./allure_result --junitxml=./junit.xml &'
 
 links = open("links.txt", "r")
 
