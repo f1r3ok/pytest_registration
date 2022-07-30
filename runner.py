@@ -21,7 +21,7 @@ driver = webdriver.Remote(command_executor="http://46.166.138.15:4444/wd/hub", d
 
 driver.maximize_window()
 
-bash_script = 'python3 -m pytest -v --alluredir=./allure_result &'
+bash_script = 'python3 -m pytest -v --alluredir=./allure_result'
 
 links = open("links.txt", "r")
 
@@ -49,7 +49,7 @@ for x in links:
         for n in test_list:
             test_opener.write(n)
         test_opener.close()
-        os.system(bash_script)
+        os.system(bash_script + ' --junitxml=./junit_results/' + link_name + lang + '.xml &')
         sleep(30)
 
 
