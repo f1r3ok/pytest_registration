@@ -26,7 +26,7 @@ capabilities = {
 }
 
 
-driver = webdriver.Remote(command_executor="http://46.166.138.15:4444/wd/hub", desired_capabilities=capabilities)
+driver = webdriver.Remote(command_executor="http://localhost:4444/wd/hub", desired_capabilities=capabilities)
 
 
 def capture_screenshot(title='captured_screenshot'):
